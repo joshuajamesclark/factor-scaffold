@@ -39,6 +39,7 @@ npm run lint
 
 **Sequelize**
 [Guide & API](http://docs.sequelizejs.com/)
+[Migrations](http://docs.sequelizejs.com/manual/migrations.html)
 
 **SQLite3**
 [Guide & API](https://www.sqlite.org/docs.html)

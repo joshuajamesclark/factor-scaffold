@@ -1,0 +1,35 @@
+// Run seeder after running example migration
+'use strict';
+
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    /*
+      Add altering commands here.
+      Return a promise to correctly handle asynchronicity.
+
+      Example:
+      return queryInterface.bulkInsert('People', [{
+        name: 'John Doe',
+        isBetaMember: false
+      }], {});
+    */
+    return queryInterface.bulkInsert('People', [{
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'demo@demo.com',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }], {});
+  },
+
+  down: (queryInterface, Sequelize) => {
+    /*
+      Add reverting commands here.
+      Return a promise to correctly handle asynchronicity.
+
+      Example:
+      return queryInterface.bulkDelete('People', null, {});
+    */
+    return queryInterface.bulkDelete('People', null, {});
+  }
+};
