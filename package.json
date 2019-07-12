@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "sequelize": "^5.10.0",
     "sqlite3": "^4.0.9",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.7"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
