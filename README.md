@@ -1,5 +1,12 @@
 # factor-scaffold
 
+### Notes
+```
+1. server/api.js contains api routes, which are prefixed with `/api` i.e. `localhost:8080/api/helloworld`
+2. src/router.js controls routing for the Vue SPA
+3. Please reach out with any questions!
+```
+
 ## Project setup
 ```
 npm install
@@ -23,6 +30,12 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Run Database Migrations and seed Demo Data
+```
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
 ```
 
 ## Useful Documentation
