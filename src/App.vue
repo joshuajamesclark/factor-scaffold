@@ -1,7 +1,12 @@
 <template>
-  <div id="app">
-    <h1>Factor</h1>
-    <router-view></router-view>
+  
+  <div>
+    <div id="title">
+      <h1>Factor</h1>
+    </div>
+    <div id="app">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -12,6 +17,14 @@ export default {
 </script>
 
 <style>
+#title {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #2c3e50;
+  margin-top: 10px;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
