@@ -1,13 +1,17 @@
 <template>
   <div class="hello">
-    <h3>Hello World</h3>
+    <h3>Hello {{personName}}</h3>
+    <input v-model="personName">
     <router-link to="/list">List Page</router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "HelloWorld",
+  data: () => ({
+    personName: "Joshua"
+  })
 };
 </script>
 
