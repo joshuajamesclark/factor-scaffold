@@ -6,28 +6,18 @@
       dark
     >
       <div class="d-flex align-center">
-        <h1>Factor</h1>
+        <img src="./assets/img/logo.svg"/>
       </div>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
 };
 </script>

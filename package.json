@@ -17,6 +17,7 @@
     "sqlite3": "^4.0.9",
     "vue": "^2.6.10",
     "vue-router": "^3.0.7",
+    "vuelidate": "^0.7.6",
     "vuetify": "^2.4.0"
   },
   "devDependencies": {

@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-import HelloWorld from "./components/HelloWorld";
-import ListPage from "./components/ListPage";
+import ProductList from "./components/ProductList";
+import CreateNewProduct from "./components/CreateNewProduct";
+import ProductDetail from "./components/ProductDetail";
 
 Vue.use(Router);
 
@@ -13,11 +14,18 @@ export default new Router({
   routes: [
     {
       path: "/",
-      component: HelloWorld
+      component: ProductList
     },
     {
-      path: "/list",
-      component: ListPage
+      name: "newProduct",
+      path: "/newProduct",
+      component: CreateNewProduct
+    },
+    {
+      path: "/productDetail/:id",
+      name: "productDetail",
+      component: ProductDetail,
+      params: true
     }
   ]
 });
