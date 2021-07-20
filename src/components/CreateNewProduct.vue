@@ -1,5 +1,7 @@
 <template>
-  <v-container>
+  <v-container
+    
+  >
      <h1
       id="title"
      >Create New Product</h1>

@@ -10,23 +10,29 @@
     </v-row>
 
     <v-row>
-      <v-list
-        
+      <v-card
+       id="downloads"
+       width="100%"
       >
-        <v-subheader>Package Files</v-subheader>
+        <v-list
+          class="teal accent-1"
+        >
+          <v-subheader>Package Files</v-subheader>
 
-        <v-list-item v-for="file in productFiles" :key="file.title">
-          <v-list-item-content>
-            <v-list-item-title v-text="file.title"></v-list-item-title>
-          </v-list-item-content>
+          <v-list-item v-for="file in productFiles" :key="file.title">
+            <v-list-item-content>
+              <v-list-item-title v-text="file.title"></v-list-item-title>
+            </v-list-item-content>
 
-          <v-list-item-action>
-            <v-btn icon>
-              <v-icon color="grey lighten-1">mdi-arrow-down-bold-box</v-icon>
-            </v-btn>
-          </v-list-item-action>
-        </v-list-item>
-      </v-list>
+            <v-list-item-action>
+              <v-btn icon>
+                <v-icon color="grey lighten-1">mdi-arrow-down-bold-box</v-icon>
+              </v-btn>
+            </v-list-item-action>
+          </v-list-item>
+        </v-list>
+      </v-card>
+      
     </v-row>
 
     <v-row>
@@ -74,4 +80,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  #downloads{
+    margin: 15px;
+    background-color: white;
+  }
+</style>
