@@ -4,7 +4,7 @@
       <v-btn @click="handleClick">Create New</v-btn>
     </v-row>
     <v-list
-      class="teal accent-2"
+      style="background-color: aliceblue"
     >
       <v-list-item v-for="(item, i) in items" :key="i">
         <v-list-item-content>

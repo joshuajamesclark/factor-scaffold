@@ -10,7 +10,7 @@ export default new Vuetify({
             light: {
                 primary: '#FFFFFF',
                 secondary: '#000000',
-                background: colors.teal.accent2
+                background: "aliceblue"
             },
         }
     }

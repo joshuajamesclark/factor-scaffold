@@ -15,7 +15,7 @@
        width="100%"
       >
         <v-list
-          class="teal accent-1"
+          style="background-color: aliceblue"
         >
           <v-subheader>Package Files</v-subheader>
 
@@ -84,7 +84,7 @@ export default {
     }
   },
   created: function () {
-    console.log(this.$route.params);
+    //do something here when component loads...
   }
 };
 </script>
