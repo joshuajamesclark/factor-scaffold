@@ -61,22 +61,31 @@
 
 <script>
 export default {
-  data: () => ({
-    productName: "VW Golf GTI",
-    dueDate: new Date(),
-    productFiles: [
-      { title: "modifications.csv" },
-      { title: "fuelManagementMap.exe" },
-    ],
-    requestedQuantities: [10, 50, 100],
-    description: `The Mk2 Volkswagen GTI has a 16v 2.0 4cylinder that utilized CIS fuel injection technology from the super 80s`
-  }),
+  data () {
+    return{
+      productName: this.getProductName(this.$route.params.id),
+      dueDate: new Date(),
+      productFiles: [
+        { title: "modifications.csv" },
+        { title: "fuelManagementMap.exe" },
+      ],
+      requestedQuantities: [10, 50, 100],
+      description: `The ${this.getProductName(this.$route.params.id)} has a 16v 2.0 4cylinder that utilized CIS fuel injection technology from the super 80s`
+    }
+  },
   methods: {
-    handleClick() {},
+    getProductName (productId) {
+    let products = [
+      {id: 0, productName: "Golf GTI"},
+      {id: 1, productName: "Jetta GTI"},
+      {id: 2, productName: "Corrado G60"}
+    ]
+    return products[productId].productName;
+    }
   },
   created: function () {
     console.log(this.$route.params);
-  },
+  }
 };
 </script>
 

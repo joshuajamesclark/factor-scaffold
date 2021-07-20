@@ -29,9 +29,9 @@ export default {
   data: () => ({
     selectedItem: null,
     items: [
-      { text: "Product 1", id: 1 },
-      { text: "Product 2", id: 2 },
-      { text: "Product 3", id: 3 }
+      {id: 0, text: "Golf GTI"},
+      {id: 1, text: "Jetta GTI"},
+      {id: 2, text: "Corrado G60"}
     ]
   }),
   methods: {
